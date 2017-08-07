@@ -17,7 +17,7 @@ final class FacebookAuthTests: XCTestCase {
   
   override func setUp() {
     config = FacebookAuth.Config(appID: "1234657")
-    facebookAuth = FacebookAuth(config: config, viewController: UIViewController())
+    facebookAuth = FacebookAuth(config: config)
   }
   
   // MARK: - openURL method

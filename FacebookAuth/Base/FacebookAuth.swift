@@ -44,9 +44,8 @@ public final class FacebookAuth: NSObject {
   
   var completionHandler: ((String?, FacebookAuth.Error?) -> Void)? = nil
   
-  public init(config: Config, viewController: UIViewController) {
+  public init(config: Config) {
     self.config = config
-    self.viewController = viewController
   }
   
   /// This method is responsible for handling the URL redirected from the Facebook authentication flow.
