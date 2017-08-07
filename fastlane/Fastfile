@@ -1,0 +1,28 @@
+default_platform :ios
+
+platform :ios do
+
+  # Runs all tests
+  lane :test do
+    scan(
+      devices: 'iPhone 7',
+      scheme: 'FacebookAuth',
+      output_types: '',
+      clean: true
+    )
+  end
+
+  lane :coverage do |options|
+    test
+    slather(
+      scheme: 'FacebookAuth',
+      proj: 'FacebookAuth.xcodeproj',
+      html: true,
+      output_directory: 'coverage',
+      use_bundle_exec: true,
+      show: options[:open],
+      ignore: ['Tests/*']
+    )
+  end
+
+end
