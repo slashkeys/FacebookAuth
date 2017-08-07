@@ -21,7 +21,8 @@ platform :ios do
       output_directory: 'coverage',
       use_bundle_exec: true,
       show: options[:open],
-      ignore: ['Tests/*']
+      ignore: ['Tests/*'],
+      coveralls: options[:ci],
     )
   end
 

@@ -1,0 +1,14 @@
+os: osx
+osx_image: xcode8.3
+language: objective-c
+
+cache: 
+  - bundler
+
+install:
+  - gem install bundler
+  - gem install nokogiri -- --use-system-libraries
+  - bundle install
+
+script: 
+  - bundle exec fastlane coverage ci:true
