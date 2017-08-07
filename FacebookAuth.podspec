@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name = 'FacebookAuth'
-  spec.version = '0.1.0'
+  spec.version = '0.1.1'
   spec.authors = {'Moritz Lang' => 'moritz@slashkeys.com'}
   spec.homepage = 'https://github.com/slashkeys/FacebookAuth'
   spec.summary = 'Swift iOS Facebook login'
