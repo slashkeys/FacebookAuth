@@ -10,13 +10,17 @@ import XCTest
 @testable import FacebookAuth
 
 final class ConfigTests: XCTestCase {
-  
   func test_it_returns_the_correct_oauth_url() {
     let appID = "43145761437"
-    let expectedURL = URL(string: "https://www.facebook.com/v2.10/dialog/oauth?client_id=\(appID)&redirect_uri=fb\(appID)://authorize&response_type=token")!
+    let queryItems = [
+      URLQueryItem(name: "client_id", value: appID),
+      URLQueryItem(name: "redirect_uri", value: "fb\(appID)://authorize&response_type=token")
+    ]
+    var urlComponents = URLComponents(string: "https://www.facebook.com/v2.10/dialog/oauth")!
+    urlComponents.queryItems = queryItems
+    let expectedURL = urlComponents.url!
+
     let config = FacebookAuth.Config(appID: appID)
-    
-    XCTAssertEqual(config.oAuthDialogURL, expectedURL)
+    XCTAssertEqual(config.oAuthURL(), expectedURL)
   }
-  
 }

@@ -42,7 +42,7 @@ In your `AppDelegate`, add the following method:
 
 ``` swift
 func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey: Any] = [:]) -> Bool {
-    return facebookAuth.application(app, open: url)
+    return facebookAuth.handle(url)
 }
 ```
 
@@ -70,9 +70,9 @@ Now the only thing left to do is to call `authenticate` on the `FacebookAuth` in
 
 ``` swift
 // self is the current `UIViewController`.
-facebookAuth.authenticate(onTopOf: self) { token, error in
-    guard let token = token else {
-        guard let error = error else { return }
+facebookAuth.authenticate(onTopOf: self) { result in
+    guard let token = result.token else {
+        guard let error = result.error else { return }
         switch error {
         case .cancelled:
             print("The authentication was cancelled by the user.")
