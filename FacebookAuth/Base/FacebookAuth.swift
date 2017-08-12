@@ -77,9 +77,9 @@ public final class FacebookAuth: NSObject {
   }
 
   public struct Result {
-    let token: String?
-    let error: FacebookAuth.Error?
-    let granted: [FacebookAuth.Permission]?
+    public let token: String?
+    public let error: FacebookAuth.Error?
+    public let granted: [FacebookAuth.Permission]?
   }
 
   public struct URLParser {
