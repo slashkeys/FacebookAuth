@@ -101,6 +101,12 @@ public final class FacebookAuth: NSObject {
     presentSafariViewController(for: config.oAuthURL(permissions: permissions))
   }
 
+  public func ask(for permissions: [Permission], onTopOf viewController: UIViewController, completion: ((Result) -> Void)?) {
+    self.completionHandler = completion
+    self.viewController = viewController
+    presentSafariViewController(for: config.oAuthURL(permissions: permissions, rerequest: true))
+  }
+
   public func handle(_ url: URL) -> Bool {
     guard url.absoluteString.hasPrefix("fb\(config.appID)") else { return false }
     guard let result = urlParser.result(from: url) else { return false }

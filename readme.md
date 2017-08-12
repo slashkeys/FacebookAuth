@@ -85,3 +85,13 @@ facebookAuth.authenticate(onTopOf: self, permissions: [.publicProfile, .email]) 
     print("Token \(token) has the following permissions: \(permissions)")
 }
 ```
+
+## Aksing for permissions
+
+If you need more permissions later you can call the `askForPermissions` method and pass in the permissions you want to ask for.
+
+``` swift
+facebookAuth.ask(for: [.userBirthday], onTopOf: self) { result in }
+```
+
+You can handle `result` exactly like above, where `result.granted` is an array of all permissions granted by the user.
