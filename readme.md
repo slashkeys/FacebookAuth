@@ -42,7 +42,7 @@ In your `AppDelegate`, add the following method:
 
 ``` swift
 func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey: Any] = [:]) -> Bool {
-    return facebookAuth.application(app, open: url)
+    return facebookAuth.handle(url)
 }
 ```
 
@@ -70,9 +70,9 @@ Now the only thing left to do is to call `authenticate` on the `FacebookAuth` in
 
 ``` swift
 // self is the current `UIViewController`.
-facebookAuth.authenticate(onTopOf: self) { token, error in
-    guard let token = token else {
-        guard let error = error else { return }
+facebookAuth.authenticate(onTopOf: self, permissions: [.publicProfile, .email]) { result in
+    guard let token = result.token else {
+        guard let error = result.error else { return }
         switch error {
         case .cancelled:
             print("The authentication was cancelled by the user.")
@@ -81,6 +81,17 @@ facebookAuth.authenticate(onTopOf: self) { token, error in
         }
         return
     }
-    print(token)
+    guard let permissions = result.granted else { return }
+    print("Token \(token) has the following permissions: \(permissions)")
 }
 ```
+
+## Aksing for permissions
+
+If you need more permissions later you can call the `askForPermissions` method and pass in the permissions you want to ask for.
+
+``` swift
+facebookAuth.ask(for: [.userBirthday], onTopOf: self) { result in }
+```
+
+You can handle `result` exactly like above, where `result.granted` is an array of all permissions granted by the user.

@@ -7,13 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8144C075BBE246FA4FC01EC7 /* FacebookAuth_URLParser+FacebookAuth_Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8144C6E1158B2BBFAE17CB05 /* FacebookAuth_URLParser+FacebookAuth_Result.swift */; };
+		8144C1192697A74CFE0AC194 /* AuthenticationCompletionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8144CCE44C29CDA57BFB3C18 /* AuthenticationCompletionTests.swift */; };
+		8144C1AE70B2267A9E74D109 /* PermissionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8144CA04657836B9C03F5449 /* PermissionTests.swift */; };
+		8144C1FD70A5A6E7D995FDE4 /* URLParserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8144CA6561391ADD54FBB37D /* URLParserTests.swift */; };
+		8144C4B8B33D078A8DD401A8 /* FacebookAuth_Config+OAuthURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8144CE023716DA3B51DB28D7 /* FacebookAuth_Config+OAuthURL.swift */; };
+		8144CAD39171C2C4A330C95E /* AskForPermissionsCompletionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8144C29D3A6600A1732CF3DE /* AskForPermissionsCompletionTests.swift */; };
+		8144CC92098AFF86CF4AB99C /* FacebookAuth_Permission+Scope.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8144C1E303B35D85CA2163D9 /* FacebookAuth_Permission+Scope.swift */; };
+		8144CF7BD083C764750F328E /* HandleURLTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8144C3BDC696603A5B24469A /* HandleURLTests.swift */; };
 		91288ED61F38AF200054D5F9 /* ConfigTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91288ED51F38AF200054D5F9 /* ConfigTests.swift */; };
-		91288ED81F38AF5C0054D5F9 /* FacebookAuthTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91288ED71F38AF5C0054D5F9 /* FacebookAuthTests.swift */; };
-		9149C3DF1F388AE200BB5C0D /* URL+AuthResultTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9149C3DE1F388AE200BB5C0D /* URL+AuthResultTests.swift */; };
 		9152300B1F38A46F00E646F8 /* FacebookAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9152300A1F38A46F00E646F8 /* FacebookAuth.swift */; };
 		915A58E01F38B4A1004D7FA9 /* FacebookAuth+SFSafariViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915A58DF1F38B4A1004D7FA9 /* FacebookAuth+SFSafariViewControllerDelegate.swift */; };
 		91700EFC1F36708D00AB8EC6 /* FacebookAuth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91B707751F366EB400BFF9F9 /* FacebookAuth.framework */; };
-		91B12B401F37DA7400643C97 /* URL+AuthResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B12B3F1F37DA7400643C97 /* URL+AuthResult.swift */; };
 		91B707861F366EB400BFF9F9 /* FacebookAuth.h in Headers */ = {isa = PBXBuildFile; fileRef = 91B707781F366EB400BFF9F9 /* FacebookAuth.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
@@ -28,14 +33,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8144C1E303B35D85CA2163D9 /* FacebookAuth_Permission+Scope.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FacebookAuth_Permission+Scope.swift"; sourceTree = "<group>"; };
+		8144C29D3A6600A1732CF3DE /* AskForPermissionsCompletionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AskForPermissionsCompletionTests.swift; sourceTree = "<group>"; };
+		8144C3BDC696603A5B24469A /* HandleURLTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HandleURLTests.swift; sourceTree = "<group>"; };
+		8144C6E1158B2BBFAE17CB05 /* FacebookAuth_URLParser+FacebookAuth_Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FacebookAuth_URLParser+FacebookAuth_Result.swift"; sourceTree = "<group>"; };
+		8144CA04657836B9C03F5449 /* PermissionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PermissionTests.swift; sourceTree = "<group>"; };
+		8144CA6561391ADD54FBB37D /* URLParserTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLParserTests.swift; sourceTree = "<group>"; };
+		8144CCE44C29CDA57BFB3C18 /* AuthenticationCompletionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationCompletionTests.swift; sourceTree = "<group>"; };
+		8144CE023716DA3B51DB28D7 /* FacebookAuth_Config+OAuthURL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FacebookAuth_Config+OAuthURL.swift"; sourceTree = "<group>"; };
 		91288ED51F38AF200054D5F9 /* ConfigTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigTests.swift; sourceTree = "<group>"; };
-		91288ED71F38AF5C0054D5F9 /* FacebookAuthTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacebookAuthTests.swift; sourceTree = "<group>"; };
-		9149C3DE1F388AE200BB5C0D /* URL+AuthResultTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+AuthResultTests.swift"; sourceTree = "<group>"; };
 		9152300A1F38A46F00E646F8 /* FacebookAuth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacebookAuth.swift; sourceTree = "<group>"; };
 		915A58DF1F38B4A1004D7FA9 /* FacebookAuth+SFSafariViewControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FacebookAuth+SFSafariViewControllerDelegate.swift"; sourceTree = "<group>"; };
 		91700EF71F36708D00AB8EC6 /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		91700EFB1F36708D00AB8EC6 /* Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tests-Info.plist"; sourceTree = "<group>"; };
-		91B12B3F1F37DA7400643C97 /* URL+AuthResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+AuthResult.swift"; sourceTree = "<group>"; };
 		91B707751F366EB400BFF9F9 /* FacebookAuth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FacebookAuth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		91B707781F366EB400BFF9F9 /* FacebookAuth.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FacebookAuth.h; sourceTree = "<group>"; };
 		91B707791F366EB400BFF9F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -63,26 +73,14 @@
 		91288ED41F38AF100054D5F9 /* Base */ = {
 			isa = PBXGroup;
 			children = (
-				91288ED71F38AF5C0054D5F9 /* FacebookAuthTests.swift */,
 				91288ED51F38AF200054D5F9 /* ConfigTests.swift */,
+				8144CA6561391ADD54FBB37D /* URLParserTests.swift */,
+				8144CA04657836B9C03F5449 /* PermissionTests.swift */,
+				8144CCE44C29CDA57BFB3C18 /* AuthenticationCompletionTests.swift */,
+				8144C3BDC696603A5B24469A /* HandleURLTests.swift */,
+				8144C29D3A6600A1732CF3DE /* AskForPermissionsCompletionTests.swift */,
 			);
 			path = Base;
-			sourceTree = "<group>";
-		};
-		9147FFCD1F37C854008018E2 /* Helper */ = {
-			isa = PBXGroup;
-			children = (
-				91B12B3F1F37DA7400643C97 /* URL+AuthResult.swift */,
-			);
-			path = Helper;
-			sourceTree = "<group>";
-		};
-		9149C3DD1F388AC000BB5C0D /* Helper */ = {
-			isa = PBXGroup;
-			children = (
-				9149C3DE1F388AE200BB5C0D /* URL+AuthResultTests.swift */,
-			);
-			path = Helper;
 			sourceTree = "<group>";
 		};
 		915230091F38A45900E646F8 /* Base */ = {
@@ -90,6 +88,9 @@
 			children = (
 				9152300A1F38A46F00E646F8 /* FacebookAuth.swift */,
 				915A58DF1F38B4A1004D7FA9 /* FacebookAuth+SFSafariViewControllerDelegate.swift */,
+				8144CE023716DA3B51DB28D7 /* FacebookAuth_Config+OAuthURL.swift */,
+				8144C6E1158B2BBFAE17CB05 /* FacebookAuth_URLParser+FacebookAuth_Result.swift */,
+				8144C1E303B35D85CA2163D9 /* FacebookAuth_Permission+Scope.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -98,7 +99,6 @@
 			isa = PBXGroup;
 			children = (
 				91288ED41F38AF100054D5F9 /* Base */,
-				9149C3DD1F388AC000BB5C0D /* Helper */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -135,7 +135,6 @@
 			isa = PBXGroup;
 			children = (
 				915230091F38A45900E646F8 /* Base */,
-				9147FFCD1F37C854008018E2 /* Helper */,
 				91700F031F3670BC00AB8EC6 /* Support */,
 			);
 			path = FacebookAuth;
@@ -251,9 +250,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				91288ED81F38AF5C0054D5F9 /* FacebookAuthTests.swift in Sources */,
 				91288ED61F38AF200054D5F9 /* ConfigTests.swift in Sources */,
-				9149C3DF1F388AE200BB5C0D /* URL+AuthResultTests.swift in Sources */,
+				8144C1FD70A5A6E7D995FDE4 /* URLParserTests.swift in Sources */,
+				8144C1AE70B2267A9E74D109 /* PermissionTests.swift in Sources */,
+				8144C1192697A74CFE0AC194 /* AuthenticationCompletionTests.swift in Sources */,
+				8144CF7BD083C764750F328E /* HandleURLTests.swift in Sources */,
+				8144CAD39171C2C4A330C95E /* AskForPermissionsCompletionTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,9 +263,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				91B12B401F37DA7400643C97 /* URL+AuthResult.swift in Sources */,
 				915A58E01F38B4A1004D7FA9 /* FacebookAuth+SFSafariViewControllerDelegate.swift in Sources */,
 				9152300B1F38A46F00E646F8 /* FacebookAuth.swift in Sources */,
+				8144C4B8B33D078A8DD401A8 /* FacebookAuth_Config+OAuthURL.swift in Sources */,
+				8144C075BBE246FA4FC01EC7 /* FacebookAuth_URLParser+FacebookAuth_Result.swift in Sources */,
+				8144CC92098AFF86CF4AB99C /* FacebookAuth_Permission+Scope.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
