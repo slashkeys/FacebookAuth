@@ -12,6 +12,7 @@
 		8144C1AE70B2267A9E74D109 /* PermissionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8144CA04657836B9C03F5449 /* PermissionTests.swift */; };
 		8144C1FD70A5A6E7D995FDE4 /* URLParserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8144CA6561391ADD54FBB37D /* URLParserTests.swift */; };
 		8144C4B8B33D078A8DD401A8 /* FacebookAuth_Config+OAuthURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8144CE023716DA3B51DB28D7 /* FacebookAuth_Config+OAuthURL.swift */; };
+		8144CAD39171C2C4A330C95E /* AskForPermissionsCompletionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8144C29D3A6600A1732CF3DE /* AskForPermissionsCompletionTests.swift */; };
 		8144CC92098AFF86CF4AB99C /* FacebookAuth_Permission+Scope.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8144C1E303B35D85CA2163D9 /* FacebookAuth_Permission+Scope.swift */; };
 		8144CF7BD083C764750F328E /* HandleURLTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8144C3BDC696603A5B24469A /* HandleURLTests.swift */; };
 		91288ED61F38AF200054D5F9 /* ConfigTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91288ED51F38AF200054D5F9 /* ConfigTests.swift */; };
@@ -33,6 +34,7 @@
 
 /* Begin PBXFileReference section */
 		8144C1E303B35D85CA2163D9 /* FacebookAuth_Permission+Scope.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FacebookAuth_Permission+Scope.swift"; sourceTree = "<group>"; };
+		8144C29D3A6600A1732CF3DE /* AskForPermissionsCompletionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AskForPermissionsCompletionTests.swift; sourceTree = "<group>"; };
 		8144C3BDC696603A5B24469A /* HandleURLTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HandleURLTests.swift; sourceTree = "<group>"; };
 		8144C6E1158B2BBFAE17CB05 /* FacebookAuth_URLParser+FacebookAuth_Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FacebookAuth_URLParser+FacebookAuth_Result.swift"; sourceTree = "<group>"; };
 		8144CA04657836B9C03F5449 /* PermissionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PermissionTests.swift; sourceTree = "<group>"; };
@@ -76,6 +78,7 @@
 				8144CA04657836B9C03F5449 /* PermissionTests.swift */,
 				8144CCE44C29CDA57BFB3C18 /* AuthenticationCompletionTests.swift */,
 				8144C3BDC696603A5B24469A /* HandleURLTests.swift */,
+				8144C29D3A6600A1732CF3DE /* AskForPermissionsCompletionTests.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -252,6 +255,7 @@
 				8144C1AE70B2267A9E74D109 /* PermissionTests.swift in Sources */,
 				8144C1192697A74CFE0AC194 /* AuthenticationCompletionTests.swift in Sources */,
 				8144CF7BD083C764750F328E /* HandleURLTests.swift in Sources */,
+				8144CAD39171C2C4A330C95E /* AskForPermissionsCompletionTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
