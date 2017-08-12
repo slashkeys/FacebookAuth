@@ -6,10 +6,12 @@
 import Foundation
 
 extension FacebookAuth.Config {
-  func oAuthURL() -> URL {
+  func oAuthURL(permissions: [FacebookAuth.Permission]) -> URL {
     let queryItems = [
       URLQueryItem(name: "client_id", value: appID),
-      URLQueryItem(name: "redirect_uri", value: "fb\(appID)://authorize&response_type=token")
+      URLQueryItem(name: "redirect_uri", value: "fb\(appID)://authorize"),
+      URLQueryItem(name: "response_type", value: "token,granted_scopes"),
+      URLQueryItem(name: "scope", value: FacebookAuth.Permission.permissionsToScope(permissions))
     ]
     var urlComponents = URLComponents(string: "https://www.facebook.com/v2.10/dialog/oauth")!
     urlComponents.queryItems = queryItems

@@ -7,6 +7,6 @@ import SafariServices
 
 extension FacebookAuth: SFSafariViewControllerDelegate {
   public func safariViewControllerDidFinish(_ controller: SFSafariViewController) {
-    completionHandler?(FacebookAuth.Result(token: nil, error: .cancelled))
+    completionHandler?(FacebookAuth.Result(token: nil, error: .cancelled, granted: nil))
   }
 }

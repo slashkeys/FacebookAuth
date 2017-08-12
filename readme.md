@@ -70,7 +70,7 @@ Now the only thing left to do is to call `authenticate` on the `FacebookAuth` in
 
 ``` swift
 // self is the current `UIViewController`.
-facebookAuth.authenticate(onTopOf: self) { result in
+facebookAuth.authenticate(onTopOf: self, permissions: [.publicProfile, .email]) { result in
     guard let token = result.token else {
         guard let error = result.error else { return }
         switch error {
@@ -81,6 +81,7 @@ facebookAuth.authenticate(onTopOf: self) { result in
         }
         return
     }
-    print(token)
+    guard let permissions = result.granted else { return }
+    print("Token \(token) has the following permissions: \(permissions)")
 }
 ```
