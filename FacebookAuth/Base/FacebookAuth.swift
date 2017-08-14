@@ -80,6 +80,12 @@ public final class FacebookAuth: NSObject {
     public let token: String?
     public let error: FacebookAuth.Error?
     public let granted: [FacebookAuth.Permission]?
+    
+    public init(token: String?, error: FacebookAuth.Error?, granted: [FacebookAuth.Permission]?) {
+      self.token = token
+      self.error = error
+      self.granted = granted
+    }
   }
 
   public struct URLParser {
